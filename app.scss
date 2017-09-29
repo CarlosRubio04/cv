@@ -1,0 +1,70 @@
+// Colores 
+
+$orange: #f7b500;
+$green: #44d7b6;
+$blue: #32c5ff;
+$purple: #b620e0;
+$fucsia: #6236ff;
+$black: rgba(#000, .75);
+$softBlack: rgba(#000, .45);
+$white: #FCFCFC;
+$gray: #f8f8fb;
+
+body {
+	background-color: $white;
+	font-family: 'Raleway', sans-serif;
+	color: $black;
+}
+h1, h2, h3, h4, h5, p {
+	margin: 0;
+	line-height: 1.5;
+}
+h1 {
+	font-weight: 700;
+	font-size: 3.5em;
+	color: $black;
+}
+h2 {
+	font-weight: 500;
+	font-size: 2em;
+	color: $softBlack;
+}
+//Hero Section
+.Hero {
+	width: 100%;
+	max-height: 60vh;
+	&Container{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&Photo {
+			width: 50%;
+			img {
+				width: 100%;
+				height: 400px;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+		&Intro {
+			width: 50%;
+			&Wrapper {
+				width: 100%;
+				padding: 0 3em;
+			}
+		}
+	}
+	&Social {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		margin-top: 1em;
+		li {
+			margin-right: 1.5em;
+			a {
+				font-size: 1.5em;
+				color: $blue;
+			}
+		}
+	}
+}
